@@ -1,0 +1,58 @@
+#include <stdio.h>
+int main()
+{
+  int a,b,c,d;
+  char ch;
+   printf("Welcome to Multifunction Program! \n");
+  printf("Here is a list of programs  to choose from: Swapping of 2no's with n without 3rd variable, Basic calculator \n");
+  printf("Please enter the Number you want to convert.\n");
+  
+   printf("Enter 1 for Swapping of 2 no's without 3rd Variable. \n");
+   printf("Enter 2 for Swapping of 2 no's wit 3rdh Variable. \n");
+   printf("Enter 3 for Basic Calculator. \n");
+  scanf("%i",&d);
+switch(d)
+{
+  case 1: printf("Enter NO'S TO BE SWAPPED ");
+         scanf("%i %i",&a,&b);
+
+          a=a*b;
+          b=a/b;
+          a=a/b;
+         printf("Swapped NO's %d %d",a,b);
+         break;
+  
+case 2: printf("Enter NO'S TO BE SWAPPED ");
+        scanf("%i %i",&a,&b);
+          c=a;
+          a=b;
+          b=c;
+         printf("Swapped NO's %d %d",a,b);
+         break;
+  
+case 3: printf("Enter two numbers ");
+        scanf("%i %i ",&a,&b);
+       
+        scanf("%c",&ch);
+        switch(ch)
+        { 
+          case '+': c=a+b;
+                   printf("Sum = %i",c);
+                   break;
+          case '-': c=a-b;
+                   printf("Difference =%i",c);
+                   break;
+          case '*': c=a*b;
+                   printf("Multiplication =%i",c);
+                   break;
+          case '/': c=a/b;
+                   printf("Division = %i",c);
+                   break;
+          default: printf("Specific fumction not specified");
+                   break;
+        }
+  break;
+  default: printf("Retry");
+}
+  return 0;
+  }
